@@ -1,4 +1,4 @@
--- this program is used to generate a scaled train dataset using Affine transform and bilinear sampler
+-- this program is used to generate a RS train dataset using Affine transform and bilinear sampler
 
 require 'image';
 require 'stn';
