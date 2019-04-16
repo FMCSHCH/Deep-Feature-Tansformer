@@ -16,12 +16,12 @@ In this section, we carry out an experiment to show the power of the proposed DF
 such a combination DFTN+VDSR and the combination of the existing state of the arts: STN+VDSR. To simulate the missing information inside corrupted images, we use the dataset CelebA faces [5] and mask all the input images at the center by using a mask of 16×16 pixels. We then add spatial transformation effects upon all the masked images by using five different transformations, including R, S, RS, T, and RTS. To increase the uncertainty, making the testing more challenging on purpose, we introduced a random mechanism in selecting the transformation effects, including :(i )the rotation angle is randomly selected from the range of [-45, +45]; (ii) the scaling factor is randomly selected from the range of [0.6, 1]; (iii) the translation values are randomly selected from the range of [3, 9]; and finally (iv) combinations of the above values are also randomly selected to formulate the effect of RS and RTS. Some examples of
 such corrupted images are illustrated in part (b) of Fig.1.
 
-![image](https://user-images.githubusercontent.com/44599319/56183474-4d767a00-6049-11e9-8214-02bf67ea07ef.png)
+
 
 
 All the experimental results are shown in the next Table, from which it can be seen that our proposed DFTN still outperforms the existing STN in terms of both PSNR and SSIM measurements.
 
-![image](https://user-images.githubusercontent.com/44599319/56183545-8c0c3480-6049-11e9-9efa-b03db505df69.png)
+![image](https://user-images.githubusercontent.com/44599319/56183704-266c7800-604a-11e9-9776-c284ae811817.png)
 
 As shown in Fig.1, in addition, our proposed DFTN also outperforms STN significantly in terms of subjective visual inspections. While the existing STN can successfully correct the spatial transformations, it fails to recover the missing information in the masked area. In contrast, the proposed DFTN not only successfully overcomes the distorted effect of spatial transformation but also successfully recover the lost information for the masked regions. Further examination of the part (d) in Fig.1 reveals that the output images produced by STN+VDSR also introduced some extra distortion around the four corners of most sample images. This is due to the fact that STN used bilinear interpolation, which inevitably incurs the extrapolation process in the pixel domain.
 In contrast, our proposed DFTN does not have any such distortion as shown in part (c) of Fig.1. This is due to the fact that our proposed DFTN works in deep feature domain and hence the extrapolation in grid sampling can only affect the feature map, not the pixels.
