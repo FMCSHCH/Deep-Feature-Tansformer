@@ -1,7 +1,7 @@
 # Deep-Feature-Tansformer
 Deep Feature Transformer module is used to estimate the transformation parameters  in the feature domain of the image.
 
-![image](https://user-images.githubusercontent.com/44599319/56183503-6a12b200-6049-11e9-8f4b-8f51e96698ad.png)
+
 
 # Street View Housing Number (SVHN) Experiment 
 To illustrate that our proposed DFTN can also be applied to other types of data classification, we carried out an additional experiment by using the real-world dataset, Street View House Numbers (SVHN) [1]. To maintain a fair comparison, we followed the experiment design given in [2] and performed pre-processing on the dataset to crop the data by taking both 64×64 and 128×128 crops around each digit sequence. We then repeated the training of the baseline [3] for both STN+CNN [4] (single and multiple STN) and the proposed DFTN+CNN to complete the classification experiment, and the results are given in the next table. From the results, it can still be concluded that our proposed DFTN achieves a better performance than the existing STN.
