@@ -14,8 +14,8 @@ To illustrate that our proposed DFTN can also be applied to other types of data 
 
 In this section, we carry out an experiment to show the power of the proposed DFTN in achieving a certain level of robustness against the missing information inside corrupted images, simulating the scenarios that some parts of images are lost during transformations or transmissions over noisy communication networks. Architecturally, we still use the same combination that the proposed DFTN integrates with VDSR, and hence the evaluations are conducted between
 such a combination DFTN+VDSR and the combination of the existing state of the arts: STN+VDSR. To simulate the missing information inside corrupted images, we use the dataset CelebA faces [4] and mask all the input images at the center by using a mask of 16×16 pixels. We then add spatial transformation effects upon all the masked images by using five different transformations, including R, S, RS, T, and RTS. To increase the uncertainty, making the testing more challenging on purpose, we introduced a random mechanism in selecting the transformation effects, including :(i )the rotation angle is randomly selected from the range of [-45, +45]; (ii) the scaling factor is randomly selected from the range of [0.6, 1]; (iii) the translation values are randomly selected from the range of [3, 9]; and finally (iv) combinations of the above values are also randomly selected to formulate the effect of RS and RTS. Some examples of
-such corrupted images are illustrated in part (b) of Fig.1.
-              ![image](https://user-images.githubusercontent.com/44599319/56183815-9975ee80-604a-11e9-9761-c94f64a8c891.png)
+such corrupted images are illustrated in part (b) of Fig.1.  
+   ![image](https://user-images.githubusercontent.com/44599319/56183815-9975ee80-604a-11e9-9761-c94f64a8c891.png)
 
 
 
