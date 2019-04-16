@@ -18,7 +18,7 @@ such corrupted images are illustrated in part (b) of Fig.1.
   
   
   
-   ![image](https://user-images.githubusercontent.com/44599319/56183815-9975ee80-604a-11e9-9761-c94f64a8c891.png)
+  ![image](https://user-images.githubusercontent.com/44599319/56183815-9975ee80-604a-11e9-9761-c94f64a8c891.png)
 
 
 
